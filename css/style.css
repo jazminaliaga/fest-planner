@@ -1,13 +1,6 @@
 @font-face {
     font-family: 'baloo';
-    src: url('fonts/BalooBhaijaan2-VariableFont_wght.ttf') format('truetype');
-    src: url('fonts/static/BalooBhaijaan2-Bold.ttf') format('truetype');
-    src: url('fonts/static/BalooBhaijaan2-ExtraBold.ttf') format('truetype');
-    src: url('fonts/static/BalooBhaijaan2-Medium.ttf') format('truetype');
-    src: url('fonts/static/BalooBhaijaan2-Regular.ttf') format('truetype');
-    src: url('fonts/static/BalooBhaijaan2-SemiBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+    src: url('fonts/BalooBhaijaan2-Regular.ttf') format('truetype');
 }
 
 * {
