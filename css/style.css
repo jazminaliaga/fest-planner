@@ -220,7 +220,6 @@ button:hover {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
 /*foooter*/
 .footer {
     background-color: rgb(67, 67, 67);
@@ -380,9 +379,8 @@ button:hover {
 
 .section-pasos .col-md-4 {
     margin-bottom: 20px;
-=======
+}
 .icons i:hover {
     color: rgb(157, 13, 196);
     transform: scale(1.5);
->>>>>>> 2c5d05b6740c3d91197a67e752b07b4e1ce607dd
 }
