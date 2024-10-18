@@ -206,16 +206,16 @@ button:hover {
     color: rgb(47, 47, 47);
     padding-top: 3rem;
 }
-.card-container{
+.eventos .card-container{
     height: 100%;
 }
-.card {
+.eventos .card {
     margin-bottom: 30px;
 }
-.card-text{
+.eventos .card-text{
     height: 58%;
 }
-.card-img-top {
+.eventos .card-img-top {
     width: 100%; /* Hace que la imagen ocupe todo el ancho */
     height: 200px; /* Establece una altura fija */
     object-fit: cover; /* Cubre el área de la tarjeta sin deformar la imagen */
@@ -242,7 +242,7 @@ button:hover {
 .eventos a{
     font-size: 1.32rem;
 }
-.view-all {
+.eventos .view-all {
     text-align: center;
     margin-top: 20px;
 }
