@@ -10,7 +10,7 @@
 }
 
 header {
-    background-color: #FFFFFF;
+    background-color: #f2e3e8;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,11 +52,6 @@ header .menu li a {
 
 header .menu li a:hover {
     color: #cb7edd;
-}
-
-.carousel-inner img {
-    height: 520px;
-    object-fit: cover;
 }
 
 .destacados {
@@ -195,177 +190,37 @@ button:hover {
     background-color: rgb(132, 11, 165);
 }
 
-/*Seccion eventos*/
-.eventos{
-    background-color: #f2e3e8;
-}
-
-.eventos h2{
-    font-size: 50px;
-    font-weight: 600;
-    color: rgb(47, 47, 47);
-    padding-top: 3rem;
-}
-.card-container{
-    height: 100%;
-}
-.card {
-    margin-bottom: 30px;
-}
-.card-text{
-    height: 58%;
-}
-.card-img-top {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho */
-    height: 200px; /* Establece una altura fija */
-    object-fit: cover; /* Cubre el área de la tarjeta sin deformar la imagen */
-}
-
-.eventos .card-img-overlay{
+.footer {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(47, 47, 47);
 }
-.eventos .btn{
-    background-color: #cb7edd;
-    border: none;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+
+.footer img {
+    width: 20%;
 }
-.eventos h3{
-    text-shadow: 2px 2px 3px #9d0dc4e0;
-    font-size: 1.6rem;
+
+.footer p {
+    font-size: 20px;
+    color: rgb(242, 227, 230);
+    margin: 0 20px;
 }
-.eventos .card-container:hover{
+
+.icons {
+    display: flex;
+}
+
+.icons i {
+    font-size: 25px;
+    color: rgb(242, 227, 230);
+    margin-right: 15px;
     cursor: pointer;
 }
-.eventos a{
-    font-size: 1.32rem;
-}
-.view-all {
-    text-align: center;
-    margin-top: 20px;
-}
 
-/*foooter*/
-.footer {
-    background-color: rgb(67, 67, 67);
-    color: #fff;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
-}
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-.footer-logo-section {
-    flex: 0 0 30%;
-}
-.footer-logo {
-    max-width: 200px;
-    margin-bottom: 20px;
-}
-.footer-links {
-    flex: 0 0 65%;
-    display: flex;
-    justify-content: space-between;
-}
-.footer-section {
-    flex: 1;
-    margin-right: 20px;
-}
-.footer-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-.footer-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-.footer-section ul li {
-    margin-bottom: 5px;
-}
-.footer-section ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-}
-.social-icons {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-.social-icons a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-}
-.app-stores {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-.app-stores img {
-    height: 40px;
-}
-.terms {
-    margin-top: 20px;
-    font-size: 12px;
-}
-.footer-bottom {
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid #333;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.footer-bottom a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 15px;
-}
-
-/*boton whatsapp*/
-
-.whatsapp-float {
-    position: fixed;
-    width: 55px;
-    height: 55px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.whatsapp-float:hover {
-    background-color: #128C7E;
-}
-
-.whatsapp-float i {
-    margin-top: 10px;
-}
-
-@media screen and (max-width: 767px) {
-    .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 20px;
-        font-size: 25px;
-    }
+.icons i:hover {
+    color: rgb(157, 13, 196);
+    transform: scale(1.5);
 }
