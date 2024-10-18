@@ -10,7 +10,7 @@
 }
 
 header {
-    background-color: #f2e3e8;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,6 +52,11 @@ header .menu li a {
 
 header .menu li a:hover {
     color: #cb7edd;
+}
+
+.carousel-inner img {
+    height: 520px;
+    object-fit: cover;
 }
 
 .destacados {
@@ -190,34 +195,56 @@ button:hover {
     background-color: rgb(132, 11, 165);
 }
 
-.footer {
+/*Seccion eventos*/
+.eventos{
+    background-color: #f2e3e8;
+}
+
+.eventos h2{
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(47, 47, 47);
+    padding-top: 3rem;
+}
+.card-container{
+    height: 100%;
+}
+.card {
+    margin-bottom: 30px;
+}
+.card-text{
+    height: 58%;
+}
+.card-img-top {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho */
+    height: 200px; /* Establece una altura fija */
+    object-fit: cover; /* Cubre el área de la tarjeta sin deformar la imagen */
+}
+
+.eventos .card-img-overlay{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px 0;
-    background-color: rgb(47, 47, 47);
 }
-
-.footer img {
-    width: 20%;
+.eventos .btn{
+    background-color: #cb7edd;
+    border: none;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
-
-.footer p {
-    font-size: 20px;
-    color: rgb(242, 227, 230);
-    margin: 0 20px;
+.eventos h3{
+    text-shadow: 2px 2px 3px #9d0dc4e0;
+    font-size: 1.6rem;
 }
-
-.icons {
-    display: flex;
-}
-
-.icons i {
-    font-size: 25px;
-    color: rgb(242, 227, 230);
-    margin-right: 15px;
+.eventos .card-container:hover{
     cursor: pointer;
+}
+.eventos a{
+    font-size: 1.32rem;
+}
+.view-all {
+    text-align: center;
+    margin-top: 20px;
 }
 
 /*foooter*/
@@ -341,4 +368,42 @@ button:hover {
         right: 20px;
         font-size: 25px;
     }
+}
+/* Estilos para la sección de pasos */
+.section-pasos {
+    background-color: #f2e3e8;
+    padding: 40px 0;
+}
+
+.section-pasos h2 {
+    font-weight: bold;       /* Pone el texto en negrita */
+    font-size: 3rem;        /* Aumenta el tamaño del texto */
+    text-align: center;
+    color: #000000;         /* Texto en negro */
+    margin-bottom: 30px;    /* Espaciado inferior */
+    text-transform: lowercase; /* Pone el texto en minúsculas */
+}
+
+.section-pasos .card-text {
+    font-weight: bold;       /* Pone el texto en negrita */
+    font-size: 1.75rem;      /* Aumenta el tamaño del texto */
+    color: #000000;          /* Texto en negro */
+    margin-top: 15px;       /* Espaciado superior */
+    margin-bottom: 0;       /* Elimina el espaciado inferior */
+}
+
+.section-pasos img {
+    width: 60%;              /* Tamaño más pequeño de la imagen */
+    height: auto;            /* Mantiene la proporción de las imágenes */
+    margin: 0 auto;          /* Centrar imagen */
+}
+
+.section-pasos .card {
+    border: none;
+    background-color: #f2e3e8;
+    text-align: center;
+}
+
+.section-pasos .col-md-4 {
+    margin-bottom: 20px;
 }
