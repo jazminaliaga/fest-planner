@@ -247,39 +247,87 @@ button:hover {
     margin-top: 20px;
 }
 
+/*foooter*/
 .footer {
+    background-color: rgb(67, 67, 67);
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    padding: 10px 0;
-    background-color: rgb(47, 47, 47);
+    align-items: flex-start;
 }
-
-.footer img {
-    width: 20%;
+.footer-logo-section {
+    flex: 0 0 30%;
 }
-
-.footer p {
-    font-size: 20px;
-    color: rgb(242, 227, 230);
-    margin: 0 20px;
+.footer-logo {
+    max-width: 200px;
+    margin-bottom: 20px;
 }
-
-.icons {
+.footer-links {
+    flex: 0 0 65%;
     display: flex;
+    justify-content: space-between;
 }
-
-.icons i {
-    font-size: 25px;
-    color: rgb(242, 227, 230);
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+.app-stores {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.app-stores img {
+    height: 40px;
+}
+.terms {
+    margin-top: 20px;
+    font-size: 12px;
+}
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
     margin-right: 15px;
-    cursor: pointer;
-}
-
-.icons i:hover {
-    color: rgb(157, 13, 196);
-    transform: scale(1.5);
 }
 
 /*boton whatsapp*/
