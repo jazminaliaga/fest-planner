@@ -207,7 +207,8 @@
         </section>
 
         <!--Formulario-->
-        <section class="formulario" id="fomulario">
+        <section class="formulario" id="fomulario" action="mailto:jazminaliaga.itu@gmail.com" method="post"
+            enctype="text/plain">
             <h2>¿Te avisamos de los próximos eventos?</h2>
             <div id="formulario">
                 <form action="" id="contacto">
@@ -264,6 +265,13 @@
                     </div>
                     <button type="submit">Quiero saber de próximos eventos</button>
                 </form>
+                <!-- Popup de éxito -->
+                <div class="popup" id="successPopup" style="display: none;">
+                    <div class="popup-content">
+                        <h2>¡Pronto te mandaremos novedades!</h2>
+                        <span class="close" onclick="closePopup()">&times;</span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -275,6 +283,16 @@
 
     <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        document.getElementById('contacto').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('successPopup').style.display = 'block';
+        });
+    
+        function closePopup() {
+            document.getElementById('successPopup').style.display = 'none';
+        }
+    </script>
 </body>
 
 <!--Footer-->
