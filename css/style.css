@@ -28,14 +28,12 @@ header.logo {
 header .logo img {
     height: 80px;
     width: auto;
-    object-fit: contain;
 }
 
 header .menu {
     list-style: none;
     display: flex;
     align-items: center;
-    height: 100%;
 }
 
 header .menu li {
@@ -64,6 +62,12 @@ header .menu li a:hover {
     object-fit: cover;
 }
 
+@media screen and (min-width: 768px) {
+    .carousel-inner img {
+        height: 520px;
+    }
+}
+
 /* ABOUT US */
 .about {
     background-color: #f2e3e8;
@@ -73,8 +77,7 @@ header .menu li a:hover {
 
 .destacados {
     background-color: rgb(47, 47, 47);
-    padding-top: 2%;
-    padding-bottom: 3%;
+    padding: 2% 5%;
 }
 
 .escribir {
@@ -83,9 +86,8 @@ header .menu li a:hover {
     border-right: 4px solid;
     width: 16ch;
     color: #f2e3e8;
-    font-size: 60px;
     overflow: hidden;
-
+    font-size: 4rem;
     animation: typing 2s steps(16), blink .5s infinite step-end alternate;
 }
 
@@ -150,7 +152,7 @@ header .menu li a:hover {
 }
 
 .pasos img {
-    width: 60%;             
+    width: 80%;             
     height: auto;            
     margin: 0 auto;       
 }
@@ -160,6 +162,8 @@ header .menu li a:hover {
     background: none;
     text-align: center;
 }
+
+
 
 /* PRÓXIMOS EVENTOS */
 .eventos{
