@@ -1,3 +1,5 @@
+/* rgb(47, 47, 47) negro */
+
 @font-face {
     font-family: 'baloo';
     src: url('fonts/BalooBhaijaan2-Regular.ttf') format('truetype');
@@ -9,6 +11,7 @@
     font-family: 'baloo';
 }
 
+/* HEADER */
 header {
     background-color: #FFFFFF;
     display: flex;
@@ -51,13 +54,22 @@ header .menu li a {
 }
 
 header .menu li a:hover {
-    color: #cb7edd;
+    text-shadow: 2px 2px #ffec99, -2px 2px #ffec99, -2px -2px #ffec99, 2px -2px #ffec99;
 }
+
+/* CARROUSEL */
 
 .carousel-inner img {
     height: 520px;
     object-fit: cover;
 }
+
+/* ABOUT US */
+.about {
+    background-color: #f2e3e8;
+}
+
+/* EVENTOS DESTACADOS */
 
 .destacados {
     background-color: rgb(47, 47, 47);
@@ -109,6 +121,114 @@ header .menu li a:hover {
 
 .card:hover .card-img {
     opacity: 0.6;
+}
+
+/* PASOS */
+
+.pasos {
+    background-color: #cb7edd;
+    padding: 40px 0;
+}
+
+.pasos h2 {
+    font-size: 3rem;      
+    text-align: center;
+    color: #9d0dc4;
+    text-shadow: 2px 2px #ffec99, -2px 2px #ffec99, -2px -2px #ffec99, 2px -2px #ffec99;
+}
+
+.pasos .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pasos .card-text {
+    font-size: 1.5rem;      
+    color: #9d0dc4;   
+    margin-top: 1%;  
+}
+
+.pasos img {
+    width: 60%;             
+    height: auto;            
+    margin: 0 auto;       
+}
+
+.pasos .card {
+    border: none;
+    background: none;
+    text-align: center;
+}
+
+/* PRÓXIMOS EVENTOS */
+.eventos{
+    background-color: rgb(47, 47, 47);
+    padding: 2%;
+}
+
+.eventos h2{
+    font-size: 3rem;
+    color: #cb7edd;
+}
+
+.eventos .card-container{
+    height: 100%;
+}
+
+.eventos .card-text{
+    height: 58%;
+}
+
+.eventos .card-img-top {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho */
+    height: 200px; /* Establece una altura fija */
+    object-fit: cover; /* Cubre el área de la tarjeta sin deformar la imagen */
+}
+
+.eventos .card-img-overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventos .btn{
+    background-color: #cb7edd;
+    border: none;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.eventos h3{
+    text-shadow: 2px 2px 3px #9d0dc4e0;
+    font-size: 1.6rem;
+}
+
+.eventos .card-container:hover{
+    cursor: pointer;
+}
+
+.eventos a{
+    font-size: 1.32rem;
+}
+
+.eventos .view-all {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* FORMULARIO */
+
+.formulario {
+    background-color: #f2e3e8;
+    padding: 1%;
+}
+
+.formulario h2{
+    font-size: 3rem;
+    color: rgb(47, 47, 47);
+    padding-top: 3rem;
+    text-align: center;
 }
 
 #formulario {
@@ -195,59 +315,8 @@ button:hover {
     background-color: rgb(132, 11, 165);
 }
 
-/*Seccion eventos*/
-.eventos{
-    background-color: #f2e3e8;
-}
+/* FOOTER */
 
-.eventos h2{
-    font-size: 50px;
-    font-weight: 600;
-    color: rgb(47, 47, 47);
-    padding-top: 3rem;
-}
-.eventos .card-container{
-    height: 100%;
-}
-.eventos .card {
-    margin-bottom: 30px;
-}
-.eventos .card-text{
-    height: 58%;
-}
-.eventos .card-img-top {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho */
-    height: 200px; /* Establece una altura fija */
-    object-fit: cover; /* Cubre el área de la tarjeta sin deformar la imagen */
-}
-
-.eventos .card-img-overlay{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.eventos .btn{
-    background-color: #cb7edd;
-    border: none;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-}
-.eventos h3{
-    text-shadow: 2px 2px 3px #9d0dc4e0;
-    font-size: 1.6rem;
-}
-.eventos .card-container:hover{
-    cursor: pointer;
-}
-.eventos a{
-    font-size: 1.32rem;
-}
-.eventos .view-all {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/*foooter*/
 .footer {
     background-color: rgb(67, 67, 67);
     color: #fff;
@@ -330,7 +399,7 @@ button:hover {
     margin-right: 15px;
 }
 
-/*boton whatsapp*/
+/* boton whatsapp */
 
 .whatsapp-float {
     position: fixed;
@@ -368,42 +437,4 @@ button:hover {
         right: 20px;
         font-size: 25px;
     }
-}
-/* Estilos para la sección de pasos */
-.section-pasos {
-    background-color: #f2e3e8;
-    padding: 40px 0;
-}
-
-.section-pasos h2 {
-    font-weight: bold;       /* Pone el texto en negrita */
-    font-size: 3rem;        /* Aumenta el tamaño del texto */
-    text-align: center;
-    color: #000000;         /* Texto en negro */
-    margin-bottom: 30px;    /* Espaciado inferior */
-    text-transform: lowercase; /* Pone el texto en minúsculas */
-}
-
-.section-pasos .card-text {
-    font-weight: bold;       /* Pone el texto en negrita */
-    font-size: 1.75rem;      /* Aumenta el tamaño del texto */
-    color: #000000;          /* Texto en negro */
-    margin-top: 15px;       /* Espaciado superior */
-    margin-bottom: 0;       /* Elimina el espaciado inferior */
-}
-
-.section-pasos img {
-    width: 60%;              /* Tamaño más pequeño de la imagen */
-    height: auto;            /* Mantiene la proporción de las imágenes */
-    margin: 0 auto;          /* Centrar imagen */
-}
-
-.section-pasos .card {
-    border: none;
-    background-color: #f2e3e8;
-    text-align: center;
-}
-
-.section-pasos .col-md-4 {
-    margin-bottom: 20px;
 }
