@@ -15,18 +15,29 @@
         <!--Nav-->
         <header>
             <div class="logo">
-                <a href="/" class="logo-img">
-                    <img src="images/logo.png" alt="logo fest planner">
-                </a>
+            <a href="/" class="logo-img">
+                <img src="images/logo.png" alt="logo fest planner">
+            </a>
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-            <nav>
-                <div class="menu">
-                    <li><a href="#about">Sobre nosotros</a></li>
-                    <li><a href="#beneficios">Beneficios</a></li>
-                    <li><a href="#festivales">Festivales</a></li>
-                    <li><a href="#formulario">Contacto</a></li>
-                </div>
-            </nav>
+            <ul class="menu" id="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destacados">Destacados</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#formulario">Contacto</a></li>
+            </ul>
+            <ul class="menu-responsive" id="menu-responsive">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destacados">Destacados</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#formulario">Contacto</a></li>
+            </ul>
+        </nav>
         </header>
         <main>
             <!--About us-->
@@ -158,6 +169,18 @@
             </a>
         </main>
         <script src="js/bootstrap.js"></script>
+
+        <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+        const menuResponsive = document.getElementById('menu-responsive');
+
+        hamburger.addEventListener('click', () => {
+            menuResponsive.style.display = menuResponsive.style.display === 'flex' ? 'none' : 'flex';
+        });
+        </script>
+
+        
     </body>
 
     <!--Footer-->
