@@ -13,193 +13,197 @@
 
     <body>
         <div class="container-xl">
-        <!--Nav-->
-        <header>
-            <div class="logo">
-            <a href="/" class="logo-img">
-                <img src="images/logo.png" alt="logo fest planner">
-            </a>
-        </div>
-        <nav>
-            <div class="hamburger" id="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
+            <!--Nav-->
+            <header>
+                <div class="logo">
+                <a href="/" class="logo-img">
+                    <img src="images/logo.png" alt="logo fest planner">
+                </a>
             </div>
-            <ul class="menu" id="menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#destacados">Destacados</a></li>
-                <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#formulario">Contacto</a></li>
-            </ul>
-            <ul class="menu-responsive" id="menu-responsive">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#destacados">Destacados</a></li>
-                <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#formulario">Contacto</a></li>
-            </ul>
-        </nav>
-        </header>
-        <main>
-            <!--About us-->
-            <section id="about">
-                <div>
-                    <h2>Publicitá tu festival en Fest Planner</h2>
-                    <p>Más de 20 festivales en Argentina confían en nosotros</p>
-                    <button onclick="location.href='#formulario'">Más información</button>
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
-            </section>
-
-            <!--Carrousel-->
-            <section id="carrusel">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/3.jpg" class="d-block w-100" alt="fiesta de la cerveza">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/2.jpg" class="d-block w-100" alt="vivamos musica">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/1.jpg" class="d-block w-100" alt="lollapalooza">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/4.jpg" class="d-block w-100" alt="paul maccartey">
-                        </div>
+                <ul class="menu" id="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#destacados">Destacados</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#formulario">Contacto</a></li>
+                </ul>
+                <ul class="menu-responsive" id="menu-responsive">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#destacados">Destacados</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#formulario">Contacto</a></li>
+                </ul>
+            </nav>
+            </header>
+            <main>
+                <!--About us-->
+                <section id="about">
+                    <div>
+                        <h2>Publicitá tu festival en Fest Planner</h2>
+                        <p>Más de 20 festivales en Argentina confían en nosotros</p>
+                        <button onclick="location.href='#formulario'">Más información</button>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </section>
+                </section>
 
-            <!--Beneficios-->
-            <section id="beneficios">
-                <div class="beneficios">
-                    <ul>
-                        <li>
-                            <h5>Visibilidad garantizada</h5>
-                            <p>Alcanzamos una audiencia diversa y segmentada, asegurando que tu festival sea visto por las personas indicadas.</p>
-                        </li>
-                        <li>
-                            <h5>Soporte integral</h5>
-                            <p>Nos ocupamos de todo: promoción y optimización de campañas para maximizar resultados.</p>
-                        </li>
-                        <li>
-                            <h5>Confianza y experiencia</h5>
-                            <p>Más de 5 años de experiencia respaldan nuestro compromiso con eventos exitosos.</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Otros festivales -->
-            <section id="festivales">
-                <div class="otros-festivales">
-                    <div class="festivales-texto">
-                        <h3>La música está en nuestro ADN</h3>
-                        <p>Los festivales más esperados por los amantes de la música en vivo.</p>
-                    </div>
-                </div>
-                <div class="festivales-icons">
-            
-                </div>
-            </section>
-
-            <!--Formulario-->
-            <section class="formulario" id="fomulario" action="mailto:jazminaliaga.itu@gmail.com" method="post"
-                enctype="text/plain">
-                <h3>Publicitá con nosotros</h3>
-                <div id="formulario">
-                    <form action="" id="contacto">
-                        <div class="form-control">
-                            <label for="name">Nombre:</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-control">
-                            <label for="number">Edad:</label>
-                            <input type="number" id="number" name="number" min="18" max="99" required>
-                        </div>
-                        <div class="form-control">
-                            <label for="tipoEvento">Tipo de evento favorito:</label>
-                            <select id="tipoEvento" name="tipoEvento" required>
-                                <option value="" disabled selected>Selecciona una opción</option>
-                                <option value="musica">Rock</option>
-                                <option value="arte">Pop</option>
-                                <option value="deportes">Metal</option>
-                                <option value="comida">Infantil</option>
-                                <option value="tecnologia">Electrónica</option>
-                            </select>
-                        </div>
-                        <div class="form-control">
-                            <label>Género:</label>
-                            <div class="radio-container">
-                                <div>
-                                    <input type="radio" id="femenino" name="genero" value="Femenino">
-                                    <label for="femenino">Femenino</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="masculino" name="genero" value="Masculino">
-                                    <label for="masculino">Masculino</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="otro" name="genero" value="Otro">
-                                    <label for="otro">Otro</label>
-                                </div>
+                <!--Carrousel-->
+                <section id="carrusel">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/3.jpg" class="d-block w-100" alt="fiesta de la cerveza">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/2.jpg" class="d-block w-100" alt="vivamos musica">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/1.jpg" class="d-block w-100" alt="lollapalooza">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/4.jpg" class="d-block w-100" alt="paul maccartey">
                             </div>
                         </div>
-                        <div class="form-control">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email">
-                        </div>
-                        <div class="form-control checkbox-container">
-                            <input type="checkbox" id="notificaciones" name="notificaciones">
-                            <label for="notificaciones">Deseo recibir notificaciones por mail</label>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </section>
 
-                        </div>
-                        <div class="form-control">
-                            <label for="comentarios">Comentarios adicionales:</label>
-                            <textarea id="comentarios" name="comentarios" rows="4"
-                                placeholder="Escribe tus comentarios aquí..."></textarea>
+                <!--Beneficios-->
+                <section id="beneficios">
+                    <div class="beneficios">
+                        <ul>
+                            <li>
+                                <h5>Visibilidad garantizada</h5>
+                                <p>Alcanzamos una audiencia diversa y segmentada, asegurando que tu festival sea visto por las personas indicadas.</p>
+                            </li>
+                            <li>
+                                <h5>Soporte integral</h5>
+                                <p>Nos ocupamos de todo: promoción y optimización de campañas para maximizar resultados.</p>
+                            </li>
+                            <li>
+                                <h5>Confianza y experiencia</h5>
+                                <p>Más de 5 años de experiencia respaldan nuestro compromiso con eventos exitosos.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-                        </div>
-                        <button type="submit">Quiero saber de próximos eventos</button>
-                    </form>
-                    <!-- Popup de éxito -->
-                    <div class="popup" id="successPopup" style="display: none;">
-                        <div class="popup-content">
-                            <h2>¡Pronto te mandaremos novedades!</h2>
-                            <span class="close" onclick="closePopup()">&times;</span>
+                <!-- Otros festivales -->
+                <section id="festivales">
+                    <div class="otros-festivales">
+                        <div class="festivales-texto">
+                            <h3>La música está en nuestro ADN</h3>
+                            <p>Los festivales más esperados por los amantes de la música en vivo.</p>
                         </div>
                     </div>
-                </div>
-            </section>
+                    <div class="festivales-icons">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                </section>
 
-            <!--Whatsapp-->
-            <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
-                <i class="bi bi-whatsapp"></i>
-            </a>
-        </main>
-        <script src="js/bootstrap.js"></script>
+                <!--Formulario-->
+                <section class="formulario" id="fomulario" action="mailto:jazminaliaga.itu@gmail.com" method="post"
+                    enctype="text/plain">
+                    <h3>Publicitá con nosotros</h3>
+                    <div id="formulario">
+                        <form action="" id="contacto">
+                            <div class="form-control">
+                                <label for="name">Nombre:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-control">
+                                <label for="number">Edad:</label>
+                                <input type="number" id="number" name="number" min="18" max="99" required>
+                            </div>
+                            <div class="form-control">
+                                <label for="tipoEvento">Tipo de evento favorito:</label>
+                                <select id="tipoEvento" name="tipoEvento" required>
+                                    <option value="" disabled selected>Selecciona una opción</option>
+                                    <option value="musica">Rock</option>
+                                    <option value="arte">Pop</option>
+                                    <option value="deportes">Metal</option>
+                                    <option value="comida">Infantil</option>
+                                    <option value="tecnologia">Electrónica</option>
+                                </select>
+                            </div>
+                            <div class="form-control">
+                                <label>Género:</label>
+                                <div class="radio-container">
+                                    <div>
+                                        <input type="radio" id="femenino" name="genero" value="Femenino">
+                                        <label for="femenino">Femenino</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="masculino" name="genero" value="Masculino">
+                                        <label for="masculino">Masculino</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="otro" name="genero" value="Otro">
+                                        <label for="otro">Otro</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-control">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-control checkbox-container">
+                                <input type="checkbox" id="notificaciones" name="notificaciones">
+                                <label for="notificaciones">Deseo recibir notificaciones por mail</label>
 
-        <script>
-        const hamburger = document.getElementById('hamburger');
-        const menu = document.getElementById('menu');
-        const menuResponsive = document.getElementById('menu-responsive');
+                            </div>
+                            <div class="form-control">
+                                <label for="comentarios">Comentarios adicionales:</label>
+                                <textarea id="comentarios" name="comentarios" rows="4"
+                                    placeholder="Escribe tus comentarios aquí..."></textarea>
 
-        hamburger.addEventListener('click', () => {
-            menuResponsive.style.display = menuResponsive.style.display === 'flex' ? 'none' : 'flex';
-        });
-        </script>
+                            </div>
+                            <button type="submit">Quiero saber de próximos eventos</button>
+                        </form>
+                        <!-- Popup de éxito -->
+                        <div class="popup" id="successPopup" style="display: none;">
+                            <div class="popup-content">
+                                <h2>¡Pronto te mandaremos novedades!</h2>
+                                <span class="close" onclick="closePopup()">&times;</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-    </div>   
+                <!--Whatsapp-->
+                <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </main>
+            <script src="js/bootstrap.js"></script>
+
+            <script>
+            const hamburger = document.getElementById('hamburger');
+            const menu = document.getElementById('menu');
+            const menuResponsive = document.getElementById('menu-responsive');
+
+            hamburger.addEventListener('click', () => {
+                menuResponsive.style.display = menuResponsive.style.display === 'flex' ? 'none' : 'flex';
+            });
+            </script>
+
+        </div>   
     </body>
 
     <!--Footer-->
