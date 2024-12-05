@@ -139,15 +139,16 @@ header {
     padding: 1%;
 }
 
-.formulario h3{
-    font-size: 3rem;
+.formulario h3 {
+    font-size: 2.5rem;
     color: rgb(47, 47, 47);
     padding-top: 3rem;
     text-align: center;
 }
 
 #formulario {
-    width: 40%;
+    width: 90%;
+    max-width: 500px;
     margin: 50px auto;
     padding: 30px;
     border-radius: 10px;
@@ -194,25 +195,19 @@ select:focus {
     justify-content: center;
     align-items: center;
     gap: 20px;
-}
-
-.radio.container div {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    flex-wrap: wrap;
 }
 
 .checkbox-container {
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-    margin-bottom: 10px; 
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .checkbox-container input[type="checkbox"] {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
-
 
 button {
     width: 100%;
@@ -248,6 +243,35 @@ button:hover {
     border-radius: 5px;
     text-align: center;
 }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .formulario h3 {
+        font-size: 2rem;
+    }
+
+    #formulario {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .radio-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario h3 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
 
 /* boton whatsapp */
 
