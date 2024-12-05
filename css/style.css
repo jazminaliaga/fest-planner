@@ -8,9 +8,6 @@
     padding: 0;
     font-family: 'baloo';
 }
-body{
-    scroll-behavior: smooth 
-}
 
 /* HEADER */
 header {
@@ -61,54 +58,11 @@ header .menu li a:hover {
     text-shadow: 2px 2px #ffec99, -2px 2px #ffec99, -2px -2px #ffec99, 2px -2px #ffec99;
 }
 
-/* INICIO */
-.inicio{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #010101;
-    color: #f2e3e8;
-    padding-top: 3rem;
-}
-.inicio .content-text{
-    text-align: left;
-    margin-left: 3rem;
-}
-.inicio h2{
-    font-size: 4rem;
-    font-style: italic;
-    font-weight: 600;
-    font-family: serif;
-}
-.inicio hr{
-    height: 2px;
-    background-color: #9d0dc4;
-    margin: 20px 0;
-    width: 85%;
-}
-.inicio button{
-    width: 40%;
-}
-.inicio a{
-    text-decoration: none;
-    color: inherit;
-}
-
-.inicio img{
-    width: 100%;
-}
-
 /* CARROUSEL */
-.carrusel {
-    overflow: hidden;  
-    background-color: #ffffff;
-}
 
 .carousel-inner img {
-    object-fit: cover;      /* Asegura que las imágenes mantengan su aspecto sin deformarse */
-    height: 500px;          /* Establecer una altura fija (ajusta según tus necesidades) */
-    width: 100%;            /* Hacer que la imagen ocupe todo el ancho del contenedor */
-    margin: auto; 
+    height: 520px;
+    object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -117,163 +71,10 @@ header .menu li a:hover {
     }
 }
 
-/* ABOUT US */
-.about {
-    background-color: #f2e3e8;
-}
-
-/* EVENTOS DESTACADOS */
-
-.destacados {
-    background-color: rgb(47, 47, 47);
-    padding: 2% 5%;
-}
-
-.escribir {
-    display: block;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width: 16ch;
-    color: #f2e3e8;
-    overflow: hidden;
-    font-size: 4rem;
-    animation: typing 2s steps(16), blink .5s infinite step-end alternate;
-}
-
-@keyframes typing {
-    from { width: 0}
-}
-
-@keyframes blink {
-    50% {border-color: transparent}
-}
-
-.card .card-img-overlay {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #f2e3e8;
-    
-}
-
-.card:hover .card-img-overlay {
-    opacity: 1;
-}
-
-.card .card-img {
-    transition: opacity 0.3s ease-in-out;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0;
-    padding: 0;
-    margin: 0;
-}
-
-.card:hover .card-img {
-    opacity: 0.6;
-}
-
-/* PASOS */
-
-.pasos {
-    background-color: #cb7edd;
-    padding: 40px 0;
-}
-
-.pasos h2 {
-    font-size: 3rem;      
-    text-align: center;
-    color: #9d0dc4;
-    text-shadow: 2px 2px #ffec99, -2px 2px #ffec99, -2px -2px #ffec99, 2px -2px #ffec99;
-}
-
-.pasos .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pasos .card-text {
-    font-size: 1.5rem;      
-    color: #9d0dc4;   
-    margin-top: 1%;  
-}
-
-.pasos img {
-    width: 80%;             
-    height: auto;            
-    margin: 0 auto;       
-}
-
-.pasos .card {
-    border: none;
-    background: none;
-    text-align: center;
-}
-
-
-
-/* PRÓXIMOS EVENTOS */
-.eventos{
-    background-color: rgb(47, 47, 47);
-    padding: 2%;
-}
-
-.eventos h2{
-    font-size: 3rem;
-    color: #cb7edd;
-}
-
-.eventos .card-container{
-    height: 100%;
-}
-
-.eventos .card-text{
-    height: 58%;
-}
-
-.eventos .card-img-top {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho */
-    height: 200px; /* Establece una altura fija */
-    object-fit: cover; /* Cubre el área de la tarjeta sin deformar la imagen */
-}
-
-.eventos .card-img-overlay{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.eventos .btn{
-    background-color: #cb7edd;
-    border: none;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-}
-
-.eventos h3{
-    text-shadow: 2px 2px 3px #9d0dc4e0;
-    font-size: 1.6rem;
-}
-
-.eventos .card-container:hover{
-    cursor: pointer;
-}
-
-.eventos a{
-    font-size: 1.32rem;
-}
-
-.eventos .view-all {
-    text-align: center;
-    margin-top: 20px;
-}
-
 /* FORMULARIO */
 
 .formulario {
-    background-color: #ffffff;
+    background-color: #f2e3e8;
     padding: 1%;
 }
 
