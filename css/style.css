@@ -11,9 +11,6 @@
 
 body {
     
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    color: #fff;
     overflow-x: hidden; /* Evita el scroll horizontal */
     height: 100%; /* Aseguramos que body y html ocupen toda la pantalla */
 }
