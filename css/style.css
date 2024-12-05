@@ -277,7 +277,7 @@ header {
 
 .formulario h3 {
     font-size: 2.5rem;
-    color: rgb(47, 47, 47);
+    color: #9d0dc4;
     padding-top: 3rem;
     text-align: center;
 }
@@ -533,3 +533,74 @@ button:hover {
     margin-right: 15px;
 }
 
+/* Sección esta en nuestro adn*/
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Ocupa toda la altura del viewport */
+    background: url('https://p4.wallpaperbetter.com/wallpaper/855/629/176/music-concerts-wallpaper-preview.jpg')no-repeat center center ; /* Reemplaza 'image.png' con tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda el área */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Asegura que nada sobresalga */
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* Filtro oscuro para mejorar la legibilidad */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 20px;
+    box-sizing: border-box; /* Evita problemas de tamaño por el padding */
+}
+
+/* Títulos */
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #d9a3ff; /* Color lila */
+    text-transform: uppercase;
+}
+
+/* Descripción */
+.description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #f1f1f1;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .overlay {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+}
