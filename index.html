@@ -214,13 +214,16 @@
             </main>
             <script src="js/bootstrap.js"></script>
 
+            <!--script para el nav hamburguesa-->
             <script>
             const hamburger = document.getElementById('hamburger');
             const menu = document.getElementById('menu');
             const menuResponsive = document.getElementById('menu-responsive');
 
             hamburger.addEventListener('click', () => {
+                menuResponsive.classList.toggle("show");
                 menuResponsive.style.display = menuResponsive.style.display === 'flex' ? 'none' : 'flex';
+                
             });
             </script>
 
