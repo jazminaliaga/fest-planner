@@ -165,7 +165,7 @@ header {
     width: 100%;
     height: 100%;
     position: absolute;
-    transform: translateZ(-700px); /* Aumenta la distancia del eje */
+    transform: translateZ(-288px); /* Aumenta la distancia del eje */
     transform-style: preserve-3d;
     transition: transform 1s;
     animation: rotateInY 50s infinite linear;
@@ -192,15 +192,15 @@ header {
 }
 
 /* Ajustar posiciones de las figuras en un eje más ancho */
-#carousel figure:nth-child(1) { transform: rotateY(0deg) translateZ(700px); }
-#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(700px); }
-#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(700px); }
-#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(700px); }
-#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(700px); }
-#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(700px); }
-#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(700px); }
-#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(700px); }
-#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(700px); }
+#carousel figure:nth-child(1) { transform: rotateY(0deg) translateZ(288px); }
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px); }
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px); }
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px); }
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px); }
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px); }
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
 
 /* Animación de rotación */
 @keyframes rotateInY {
@@ -217,7 +217,7 @@ header {
     }
 
     #carousel {
-        transform: translateZ(-500px); /* Ajusta la distancia del eje */
+        transform: translateZ(-288px); /* Ajusta la distancia del eje */
     }
 
     #carousel figure {
@@ -225,15 +225,15 @@ header {
         height: 80%; /* Figuras más pequeñas */
     }
 
-    #carousel figure:nth-child(1) { transform: rotateY(0deg) translateZ(500px); }
-    #carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(500px); }
-    #carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(500px); }
-    #carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(500px); }
-    #carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(500px); }
-    #carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(500px); }
-    #carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(500px); }
-    #carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(500px); }
-    #carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(500px); }
+    #carousel figure:nth-child(1) { transform: rotateY(0deg) translateZ(288px); }
+    #carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px); }
+    #carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px); }
+    #carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px); }
+    #carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px); }
+    #carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px); }
+    #carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
+    #carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
+    #carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
 }
 
 @media (max-width: 480px) {
@@ -243,7 +243,7 @@ header {
     }
 
     #carousel {
-        transform: translateZ(-400px); /* Ajusta aún más la distancia */
+        transform: translateZ(-288px); /* Ajusta aún más la distancia */
     }
 
     #carousel figure {
@@ -251,21 +251,16 @@ header {
         height: 70%; /* Figuras más pequeñas */
     }
 
-    #carousel figure:nth-child(1) { transform: rotateY(0deg) translateZ(400px); }
-    #carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(400px); }
-    #carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(400px); }
-    #carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(400px); }
-    #carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(400px); }
-    #carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(400px); }
-    #carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(400px); }
-    #carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(400px); }
-    #carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(400px); }
+    #carousel figure:nth-child(1) { transform: rotateY(0deg) translateZ(288px); }
+    #carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px); }
+    #carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px); }
+    #carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px); }
+    #carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px); }
+    #carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px); }
+    #carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
+    #carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
+    #carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
 }
-
-
-
-
-
 
 
 /* FORMULARIO */
