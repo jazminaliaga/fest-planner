@@ -292,80 +292,81 @@ button:hover {
 /* FOOTER */
 
 .footer {
-    background-color: rgb(47, 47, 47);
+    background-color: rgb(67, 67, 67);
     color: #fff;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
 }
-
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.footer-logo-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.contentfoot-row {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px;
 }
-
+.footer-logo-section {
+    flex: 0 0 30%;
+}
 .footer-logo {
     max-width: 200px;
     margin-bottom: 20px;
 }
-
-.social {
+.footer-links {
+    flex: 0 0 65%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: space-between;
 }
-
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
 .social-icons {
     display: flex;
     gap: 10px;
+    margin-bottom: 20px;
 }
-
 .social-icons a {
     color: #fff;
     text-decoration: none;
     font-size: 24px;
 }
-
 .app-stores {
     display: flex;
     gap: 10px;
     margin-top: 10px;
 }
-
 .app-stores img {
     height: 40px;
 }
-
 .terms {
     margin-top: 20px;
     font-size: 12px;
-    text-align: center;
 }
-
 .footer-bottom {
-    margin-top: 10px;
-    padding-top: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
     border-top: 1px solid #333;
     font-size: 12px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
 .footer-bottom a {
     color: #fff;
     text-decoration: none;
