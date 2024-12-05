@@ -79,7 +79,7 @@ header {
 }
 
 .menu-responsive {
-    display: none;
+    display: none; /* Oculto por defecto */
     flex-direction: column;
     position: absolute;
     top: 90px;
@@ -87,6 +87,15 @@ header {
     background-color: #FFFFFF;
     width: 100%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menu-responsive.show {
+    display: flex; 
+    opacity: 1; 
+    pointer-events: auto; 
 }
 
 .menu-responsive li {
@@ -153,7 +162,7 @@ header {
     transform: translateZ(-700px); /* Aumenta la distancia del eje */
     transform-style: preserve-3d;
     transition: transform 1s;
-    animation: rotateInY 10s infinite linear;
+    animation: rotateInY 50s infinite linear;
 }
 
 #carousel figure {
