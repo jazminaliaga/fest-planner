@@ -24,38 +24,94 @@ header {
     z-index: 1000;
 }
 
-header.logo {
+.logo {
     cursor: pointer;
 }
 
-header .logo img {
+.logo-img img {
     height: 80px;
     width: auto;
 }
 
-header .menu {
+.menu {
     list-style: none;
     display: flex;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
-header .menu li {
+.menu li {
     padding: 0 20px;
 }
 
-header .menu li:hover {
+.menu li:hover {
     transform: scale(1.1);
 }
 
-header .menu li a {
+.menu li a {
     font-size: large;
     font-weight: 700;
     color: #9d0dc4;
     text-decoration: none;
 }
 
-header .menu li a:hover {
+.menu li a:hover {
     text-shadow: 2px 2px #ffec99, -2px 2px #ffec99, -2px -2px #ffec99, 2px -2px #ffec99;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #9d0dc4;
+    margin: 4px 0;
+}
+
+.menu-responsive {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-responsive li {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu-responsive li a {
+    font-size: large;
+    font-weight: 700;
+    color: #9d0dc4;
+    text-decoration: none;
+}
+
+.menu-responsive li a:hover {
+    text-shadow: 2px 2px #ffec99, -2px 2px #ffec99, -2px -2px #ffec99, 2px -2px #ffec99;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu-responsive {
+        display: flex;
+    }
 }
 
 /* CARROUSEL */
