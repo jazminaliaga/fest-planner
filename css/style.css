@@ -157,7 +157,7 @@ header {
     aspect-ratio: 3/2; /* Proporción de 3:2 para el carrusel */
     position: relative;
     margin: 0 auto 40px;
-    border: 1px solid #ffffff;
+    /*border: 1px solid #ffffff;*/
     perspective: 1500px; /* Ajusta la perspectiva */
 }
 
