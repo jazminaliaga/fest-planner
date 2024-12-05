@@ -1,365 +1,184 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fest Planner</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="images/star.png" type="image/x-icon">
+    </head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fest Planner</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/star.png" type="image/x-icon">
+    <body>
+        <!--Nav-->
+        <header>
+            <div class="logo">
+                <a href="/" class="logo-img">
+                    <img src="images/logo.png" alt="logo fest planner">
+                </a>
+            </div>
+            <nav>
+                <div class="menu">
+                    <li><a href="#about">Sobre nosotros</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#festivales">Festivales</a></li>
+                    <li><a href="#formulario">Contacto</a></li>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--About us-->
+            <section class="about">
+                <div>
+                    <h2>Publicitá tu festival en Fest Planner</h2>
+                    <p>Más de 20 festivales en Argentina confían en nosotros</p>
+                    <button>Más información</button>
+                </div>
+            </section>
 
-</head>
+            <!--Carrousel-->
+            <section class="carrusel">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/3.jpg" class="d-block w-100" alt="fiesta de la cerveza">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/2.jpg" class="d-block w-100" alt="vivamos musica">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/1.jpg" class="d-block w-100" alt="lollapalooza">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/4.jpg" class="d-block w-100" alt="paul maccartey">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
 
-<body>
-    <!--Navegador-->
-    <header>
-        <div class="logo">
-            <a href="/" class="logo-img">
-                <img src="images/logo.png" alt="logo fest planner">
+            <!--Beneficios-->
+
+            <!-- Otros festivales -->
+
+            <!--Formulario-->
+            <section class="formulario" id="fomulario" action="mailto:jazminaliaga.itu@gmail.com" method="post"
+                enctype="text/plain">
+                <h2>¿Te avisamos de los próximos eventos?</h2>
+                <div id="formulario">
+                    <form action="" id="contacto">
+                        <div class="form-control">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="number">Edad:</label>
+                            <input type="number" id="number" name="number" min="18" max="99" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="tipoEvento">Tipo de evento favorito:</label>
+                            <select id="tipoEvento" name="tipoEvento" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="musica">Rock</option>
+                                <option value="arte">Pop</option>
+                                <option value="deportes">Metal</option>
+                                <option value="comida">Infantil</option>
+                                <option value="tecnologia">Electrónica</option>
+                            </select>
+                        </div>
+                        <div class="form-control">
+                            <label>Género:</label>
+                            <div class="radio-container">
+                                <div>
+                                    <input type="radio" id="femenino" name="genero" value="Femenino">
+                                    <label for="femenino">Femenino</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="masculino" name="genero" value="Masculino">
+                                    <label for="masculino">Masculino</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="otro" name="genero" value="Otro">
+                                    <label for="otro">Otro</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-control checkbox-container">
+                            <input type="checkbox" id="notificaciones" name="notificaciones">
+                            <label for="notificaciones">Deseo recibir notificaciones por mail</label>
+
+                        </div>
+                        <div class="form-control">
+                            <label for="comentarios">Comentarios adicionales:</label>
+                            <textarea id="comentarios" name="comentarios" rows="4"
+                                placeholder="Escribe tus comentarios aquí..."></textarea>
+
+                        </div>
+                        <button type="submit">Quiero saber de próximos eventos</button>
+                    </form>
+                    <!-- Popup de éxito -->
+                    <div class="popup" id="successPopup" style="display: none;">
+                        <div class="popup-content">
+                            <h2>¡Pronto te mandaremos novedades!</h2>
+                            <span class="close" onclick="closePopup()">&times;</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Whatsapp-->
+            <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+                <i class="bi bi-whatsapp"></i>
             </a>
-        </div>
-        <nav>
-            <div class="menu">
-                <li><a href="#about">Sobre nosotros</a></li>
-                <li><a href="#destacados">Destacados</a></li>
-                <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#formulario">Contacto</a></li>
-            </div>
-        </nav>
-    </header>
+        </main>
+        <script src="js/bootstrap.js"></script>
+    </body>
 
-    <main>
-        <!--Carrousel-->
-        <section class="carrusel">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/3.png" class="d-block w-100" alt="fiesta de la cerveza">
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo-section">
+                <div class="contentfoot-row">
+                    <div class="logo-foot">
+                        <img src="images/logo.png" alt="logo fest planner" class="footer-logo">
                     </div>
-                    <div class="carousel-item">
-                        <img src="images/2.png" class="d-block w-100" alt="vivamos musica">
+                    <div class="social">
+                        <p>Síguenos en nuestras redes sociales</p>
+                        <div class="social-icons">
+                            <a class="bi bi-facebook" href="#" aria-label="Facebook"></a>
+                            <a class="bi bi-twitter-x" href="#" aria-label="Twitter"></a>
+                            <a class="bi bi-instagram" href="#" aria-label="Instagram"></a>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="images/1.png" class="d-block w-100" alt="lollapalooza">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/4.png" class="d-block w-100" alt="paul maccartey">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-
-        <!--About us-->
-        <section class="about" id="about">
-            <h2>Sobre nosotros</h2>
-        </section>
-
-        <!--Eventos destacados-->
-        <section class="destacados" id="destacados">
-            <span class="escribir">Eventos destacados</span>
-            <div class="row g-0">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="images/card(1).png" class="card-img" alt="Ratones Paranoicos">
-                        <div class="card-img-overlay">
-                            <h3 class="card-title">Ratones Paranoicos</h3>
-                            <h5 class="card-text">Auditorio Ángel Bustelo</h5>
-                            <p class="card-text"><small>02 de noviembre</small></p>
+                    <div class="apps">
+                        <p>Descargue nuestras aplicaciones</p>
+                        <div class="app-stores">
+                            <a href="#"><img src="images/apple.png" alt="App Store"></a>
+                            <a href="#"><img src="images/google.png" alt="Google Play"></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="images/card(2).png" class="card-img" alt="Cruzando el Charco">
-                        <div class="card-img-overlay">
-                            <h3 class="card-title">Cruzando el Charco</h3>
-                            <h5 class="card-text">Auditorio Ángel Bustelo</h5>
-                            <p class="card-text"><small>20, 21 y 22 de diciembre</small></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="images/card(3).png" class="card-img" alt="Caligaris">
-                        <div class="card-img-overlay">
-                            <h3 class="card-title">Caligaris</h3>
-                            <h5 class="card-text">Stadium Arena Maipú</h5>
-                            <p class="card-text"><small>20, 21 y 22 de diciembre</small></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="images/card(4).png" class="card-img" alt="Estelares">
-                        <div class="card-img-overlay">
-                            <h3 class="card-title">Estelares</h3>
-                            <h5 class="card-text">Stadium Arena Maipú</h5>
-                            <p class="card-text"><small>20, 21 y 22 de diciembre</small></p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Pasos -->
-        <section class="pasos">
-            <h2>¡PREPARATE PARA TU FESTIVAL!</h2>
-            <div class="row">
-                <div class="col-sm-4 mb-3 mb-sm-0">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/fest1.png" class="card-img-top" alt="entradas">
-                        <div class="card-body">
-                            <p class="card-text paso">Comprobá en nuestra página la fecha del festival</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/fest2.png" class="card-img-top" alt="entradas">
-                        <div class="card-body">
-                            <p class="card-text paso">Armá tu kit esencial</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/fest3.png" class="card-img-top" alt="entradas">
-                        <div class="card-body">
-                            <p class="card-text paso">Vestite cómodo, llegá temprano y disfrutá!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--Próximos eventos-->
-        <section class="eventos" id="eventos">
-            <div class="container mt-5">
-                <h2 class="text-center mb-4">Eventos Recientes</h2>
-                <div class="row">
-                    <!-- Tarjeta 1 -->
-                    <div class="col-md-4">
-                        <div class="card card-container">
-                            <img src="images/event1.avif" class="card-img-top" alt="Derren Brown – Smoke">
-                            <div class="card-img-overlay">
-                                <h3>Ver más</h3>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Derren Brown – Smoke</h5>
-                                <p class="card-text">The smoke and mirrors term has never been more relevant, when
-                                    talking about a magic trick. Lorem ipsum dolor, sit amet consectetur adipisicing
-                                    elit. Alias, esse?</p>
-                                <p class="text-muted">november 27, 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Tarjeta 2 -->
-                    <div class="col-md-4">
-                        <div class="card card-container">
-                            <img src="images/event2.avif" class="card-img-top" alt="David Blaine “Frozen in...">
-                            <div class="card-img-overlay">
-                                <h3>Ver más</h3>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">David Blaine “Frozen in...</h5>
-                                <p class="card-text">Since the famous David Copperfield rose to prominence back in the
-                                    ’80s and ’90s, David Blaine has arguably been the...</p>
-                                <p class="text-muted">november 26, 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Tarjeta 3 -->
-                    <div class="col-md-4">
-                        <div class="card card-container">
-                            <img src="images/event3.avif" class="card-img-top" alt="Head removal Show">
-                            <div class="card-img-overlay">
-                                <h3>Ver más</h3>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Head removal Show</h5>
-                                <p class="card-text">Though not quite as popular and often-performed as the more famous
-                                    “sawing a girl” trick, this one also makes sure...</p>
-                                <p class="text-muted">november 26, 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--
-                <div class="view-all">
-                    <a href="#" class="btn btn-primary">Ver todos</a>
-                </div>
-                -->
-            </div>
-        </section>
-
-        <!--Formulario-->
-        <section class="formulario" id="fomulario" action="mailto:jazminaliaga.itu@gmail.com" method="post"
-            enctype="text/plain">
-            <h2>¿Te avisamos de los próximos eventos?</h2>
-            <div id="formulario">
-                <form action="" id="contacto">
-                    <div class="form-control">
-                        <label for="name">Nombre:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-control">
-                        <label for="number">Edad:</label>
-                        <input type="number" id="number" name="number" min="18" max="99" required>
-                    </div>
-                    <div class="form-control">
-                        <label for="tipoEvento">Tipo de evento favorito:</label>
-                        <select id="tipoEvento" name="tipoEvento" required>
-                            <option value="" disabled selected>Selecciona una opción</option>
-                            <option value="musica">Rock</option>
-                            <option value="arte">Pop</option>
-                            <option value="deportes">Metal</option>
-                            <option value="comida">Infantil</option>
-                            <option value="tecnologia">Electrónica</option>
-                        </select>
-                    </div>
-                    <div class="form-control">
-                        <label>Género:</label>
-                        <div class="radio-container">
-                            <div>
-                                <input type="radio" id="femenino" name="genero" value="Femenino">
-                                <label for="femenino">Femenino</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="masculino" name="genero" value="Masculino">
-                                <label for="masculino">Masculino</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="otro" name="genero" value="Otro">
-                                <label for="otro">Otro</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-control">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-                    <div class="form-control checkbox-container">
-                        <input type="checkbox" id="notificaciones" name="notificaciones">
-                        <label for="notificaciones">Deseo recibir notificaciones por mail</label>
-
-                    </div>
-                    <div class="form-control">
-                        <label for="comentarios">Comentarios adicionales:</label>
-                        <textarea id="comentarios" name="comentarios" rows="4"
-                            placeholder="Escribe tus comentarios aquí..."></textarea>
-
-                    </div>
-                    <button type="submit">Quiero saber de próximos eventos</button>
-                </form>
-                <!-- Popup de éxito -->
-                <div class="popup" id="successPopup" style="display: none;">
-                    <div class="popup-content">
-                        <h2>¡Pronto te mandaremos novedades!</h2>
-                        <span class="close" onclick="closePopup()">&times;</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
-            <i class="bi bi-whatsapp"></i>
-        </a>
-
-    </main>
-
-    <script src="js/bootstrap.js"></script>
-    <script src="js/script.js"></script>
-    <script>
-        document.getElementById('contacto').addEventListener('submit', function(event) {
-            event.preventDefault();
-            document.getElementById('successPopup').style.display = 'block';
-        });
-    
-        function closePopup() {
-            document.getElementById('successPopup').style.display = 'none';
-        }
-    </script>
-</body>
-
-<!--Footer-->
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-logo-section">
-            <img src="images/logo.png" alt="logo fest planner" class="footer-logo">
-            <p>Siguenos en nuestras redes sociales</p>
-            <div class="social-icons">
-                <a class="bi bi-facebook" href="#" aria-label="Facebook"></a>
-                <a class="bi bi-twitter-x" href="#" aria-label="Twitter"></a>
-                <a class="bi bi-instagram" href="#" aria-label="Instagram"></a>
-            </div>
-            <p>Descargue nuestras aplicaciones</p>
-            <div class="app-stores">
-                <a href="#"><img src="https://uk.tmconst.com/production-10-117-0-9297799/images/logo/apple-store/es.svg"
-                        alt="App Store"></a>
-                <a href="#"><img
-                        src="https://uk.tmconst.com/production-10-117-0-9297799/images/logo/google-store/es.svg"
-                        alt="Google Play"></a>
-            </div>
-            <p class="terms">Al continuar en esta página, usted acuerda regirse por nuestros <a href="#">Términos de
-                    uso</a>.</p>
-        </div>
-        <div class="footer-links">
-            <div class="footer-section">
-                <h3>Ayuda</h3>
-                <ul>
-                    <li><a href="#">Centro de Ayuda</a></li>
-                    <li><a href="#">Contáctanos</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Estamos para ayudarte</h3>
-                <ul>
-                    <li><a href="#">Mi cuenta</a></li>
-                    <li><a href="#">Centros Fest Planner</a></li>
-                    <li><a href="#">Política de reembolso y cancelación</a></li>
-                    <li><a href="#">Fest Planner Shop</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Únete</h3>
-                <ul>
-                    <li><a href="#">Vende tu evento con nosotros</a></li>
-                    <li><a href="#">Trabaja con nosotros</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Empresa</h3>
-                <ul>
-                    <li><a href="#">Quiénes somos</a></li>
-                    <li><a href="#">Fest Planner Internacional</a></li>
-                </ul>
             </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <div>
-            <a href="#">Política de Compra</a>
-            <a href="#">Aviso de Privacidad</a>
-            <a href="#">Política de Cookies</a>
-            <a href="#">Compromisos con Fest Planner</a>
-            <a href="#">Administrar mis cookies</a>
+        <div class="footer-bottom">
+            <p class="terms">Al continuar en esta página, usted acuerda regirse por nuestros <a href="#">Términos de uso</a></p>
+            <div>© 1999-2024 Fest Planner. Todos los derechos reservados.</div>
         </div>
-        <div>© 1999-2024 Fest Planner. Todos los derechos reservados.</div>
-    </div>
-</footer>
+    </footer>    
 
 </html>
