@@ -46,7 +46,7 @@
                     <div class="about-text">
                         <h2>Publicitá tu festival en Fest Planner</h2>
                         <p>Más de 20 festivales en Argentina confían en nosotros</p>
-                        <button onclick="location.href='#formulario'">Más información</button>
+                        <button onclick="window.open('https://festplanner.com/', '_blank')">Fest Planner</button>
                     </div>
                     <div class="about-img">
                          <img src="images/img-inicio.png" alt="" srcset="">
@@ -109,7 +109,7 @@
                 </section>
 
                 <!-- Otros festivales -->
-                <section class="festivales">
+                <section id="festivales" class="festivales">
                     <div class="overlay">
                         <h1 class="title">LA MÚSICA ESTÁ EN NUESTRO ADN</h1>
                         
@@ -139,7 +139,7 @@
                 </section>
 
                 <!--Formulario-->
-                <section class="formulario" id="fomulario" action="mailto:jazminaliaga.itu@gmail.com" method="post"
+                 <section class="formulario" id="fomulario" action="mailto:jazminaliaga.itu@gmail.com" method="post"
                     enctype="text/plain">
                     <h3>Publicitá con nosotros</h3>
                     <div id="formulario">
@@ -149,11 +149,7 @@
                                 <input type="text" id="name" name="name" required>
                             </div>
                             <div class="form-control">
-                                <label for="number">Edad:</label>
-                                <input type="number" id="number" name="number" min="18" max="99" required>
-                            </div>
-                            <div class="form-control">
-                                <label for="tipoEvento">Tipo de evento favorito:</label>
+                                <label for="tipoEvento">Tipo de evento:</label>
                                 <select id="tipoEvento" name="tipoEvento" required>
                                     <option value="" disabled selected>Selecciona una opción</option>
                                     <option value="musica">Rock</option>
@@ -186,7 +182,7 @@
                             </div>
                             <div class="form-control checkbox-container">
                                 <input type="checkbox" id="notificaciones" name="notificaciones">
-                                <label for="notificaciones">Deseo recibir notificaciones por mail</label>
+                                <label for="notificaciones">Deseo recibir información por mail</label>
 
                             </div>
                             <div class="form-control">
@@ -195,7 +191,7 @@
                                     placeholder="Escribe tus comentarios aquí..."></textarea>
 
                             </div>
-                            <button type="submit">Quiero saber de próximos eventos</button>
+                            <button type="submit">Quiero publicitar mi festival</button>
                         </form>
                         <!-- Popup de éxito -->
                         <div class="popup" id="successPopup" style="display: none;">
@@ -206,7 +202,6 @@
                         </div>
                     </div>
                 </section>
-
                 <!--Whatsapp-->
                 <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
                     <i class="bi bi-whatsapp"></i>
